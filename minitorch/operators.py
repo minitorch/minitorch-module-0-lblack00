@@ -32,6 +32,72 @@ from typing import Callable, Iterable
 # $f(x) = |x - y| < 1e-2$
 
 
+def mul(x: float, y: float) -> float:
+	"""
+	Result of multiplying x by y.
+
+	Args:
+		x: A float which is the multiplicand
+		y: A float which is the multiplier
+
+	Returns:
+		Value of x * y
+	"""
+	return x * y
+
+def add(x: float, y: float) -> float:
+	"""
+	Result of adding x with y.
+
+	Args:
+		x: A float which is the first addend
+		y: A float which is the second addend
+
+	Returns:
+		Sum of both addends
+	"""
+	return x + y
+
+def neg(x: float) -> float:
+	"""
+	Negation of x.
+
+	Args:
+		x: A float which is to be negated
+
+	Returns:
+		Negation of x
+	"""
+	return -x
+
+def max(x: float, y: float) -> float:
+	"""
+	Determine maximum value between x and y.
+
+	Args:
+		x: First float
+		y: Second float
+
+	Returns:
+		Larger of the two values
+	"""
+	if x > y:
+		return x
+
+	return y
+
+def inv(x: float) -> float:
+	"""
+	Find reciprocal of input value
+
+	Args:
+		x: Value to be inversed
+
+	Returns:
+		Reciprocal of x
+	"""
+	return 1.0 / x
+
 # TODO: Implement for Task 0.1.
 
 
